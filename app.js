@@ -34,10 +34,10 @@ app.use(openApiValidator.middleware({
 app.use(databaseMiddleware)
 
 
-//app.get('/', (req, res) => {
+app.get('/', (req, res) => {
 
-//    res.send('Assignment week 11 by Iman')
-//})
+    res.send('Assignment week 10 by Iman')
+})
 
 
 
