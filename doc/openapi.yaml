@@ -6,7 +6,7 @@ info:
 servers:
   - url: 'http://localhost:2222/api-docs'
     description: 'Local server'
-  - url: 'https:///'
+  - url: 'https://fair-jade-lemming-suit.cyclic.app/api-docs/'
     description: 'Cyclic server'
 components:
   securitySchemes:
@@ -76,7 +76,7 @@ components:
           type: string
           enum:
             - 'USD'
-            - 'EUR'
+            - 'SAR'
             - 'IDR'
         sourceAccount:
           type: string
