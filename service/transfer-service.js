@@ -59,7 +59,7 @@ const updateTransferRequest = async ({ db, id, status }) => {
 
 const deleteTransferRequest = async ({ db, id }) => {
   try {
-    const res = await db.collection('transfer').updateOne({ _id: new ObjectId(id) }, { $set: { deletedAt: new Date(), updatedAt: new Date() } })
+    const res = await db.collection('transfer').deleteOne({ _id: new ObjectId(id) }, { $set: { deletedAt: new Date(), updatedAt: new Date() } })
     if (res.modifiedCount === 0) {
       throw new StandardError({ message: "Transfer request not found", status: 404 })
     }

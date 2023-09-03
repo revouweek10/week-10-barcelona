@@ -4,7 +4,7 @@ info:
   version: '1.0.0'
   description: 'API for managing transfer requests'
 servers:
-  - url: 'https://localhost:3000/'
+  - url: 'http://localhost:2222/api-docs'
     description: 'Local server'
   - url: 'https:///'
     description: 'Cyclic server'
@@ -231,7 +231,7 @@ paths:
           description: 'Invalid request'
         '401':
           description: 'Unauthorized'
-  /v1/transfer/history:
+  /transfer/history:
     get:
       security:
         - bearer: []
